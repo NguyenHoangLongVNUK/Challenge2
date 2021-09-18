@@ -6,6 +6,8 @@ import function
 import time
 import export_csv
 
+print("Ý tưởng: 1 người khỏe, 5 người vui. Sử dụng hàm của câu hỏi in ra dữ liệu tô của 5 đáp án đầu tiên để loop cho tất cả 4 câu hỏi phía sau:")
+
 def generate_grading(df:pd.DataFrame):
     # df = pd.read_csv('student.csv')
     list_student = df['sheetName'].tolist()
@@ -203,6 +205,5 @@ def show_menu():
         exit()
 
 
-# Đọc file kết hợp tách ra file riêng để xem toàn bộ chi tiết file theo tháng hoặc năm mình cần, khi đã chạy lần đầu xong cho data của năm và tháng đó thì sử dụng đọc file đã tách được có kích thước nhỏ hơn cho những lần chạy sau để tiết kiệm thời gian chạy.
 if __name__ == '__main__':
     show_menu()
